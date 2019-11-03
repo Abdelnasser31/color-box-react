@@ -36,7 +36,7 @@ export class Container extends Component {
         return Math.floor(Math.random() * x)
     }
     render() {
-        let boxes = this.state.colors.map((color,i) => <Box key={i} onChildClick ={this.handleChildClick.bind(null,i)} color={color} />)
+        let boxes = this.state.colors.map((color,i) => <Box onChildClick ={this.handleChildClick.bind(null,i)} color={color} />)
         return (
             <div className='Container'>
                 {boxes}
