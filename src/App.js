@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
 import Box from './Box'
+import Container from './Container';
 function App() {
   return (
     <div className="App">
-     <Box color='green' />
+     <Container nBoxes={18} />
     </div>
   );
 }
